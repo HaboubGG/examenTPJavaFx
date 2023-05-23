@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.examentpjavafx.SampleController"
+          prefHeight="400.0" prefWidth="600.0">
+    <Label text="Value" GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="result"></Label>
+    <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="textfield"></TextField>
+
+    <Label text="From to" GridPane.rowIndex="1" GridPane.columnIndex="0"></Label>
+    <ComboBox fx:id="Combo" GridPane.rowIndex="1" GridPane.columnIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="from cellsius to Fahrenheit" />
+                <String fx:value="from cellsius to Fahrenheit" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+
+<Button onAction="#convert" text="convert" GridPane.columnIndex="0" GridPane.rowIndex="2"></Button>
+
+    <Button onAction="#save" text="save" GridPane.columnIndex="1" GridPane.rowIndex="2"></Button>
+
+    <Button onAction="#cancel" text="cancel" GridPane.columnIndex="2" GridPane.rowIndex="2"></Button>
+
+<ListView GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"></ListView>
+
+</GridPane>

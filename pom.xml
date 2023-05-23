@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.examentpjavafx/com.example.examentpjavafx.HelloApplication
+                            <mainClass>com.example.examentpjavafx/com.example.examentpjavafx.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
